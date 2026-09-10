@@ -1,0 +1,22 @@
+{
+  "name": "mcp-catalogue",
+  "version": "0.21.0",
+  "description": "MCP server for a product price list and rate card. One price list and one rate card, kept where the invoice and the quote can both read them.",
+  "settings": [
+    {
+      "name": "mcp.zovo.one token",
+      "description": "A free anonymous token from https://mcp.zovo.one/mcp/token, or your Pro key. One token is one data space, and it is refreshed for another 30 days on every write.",
+      "envVar": "ZOVO_MCP_TOKEN",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "catalogue": {
+      "httpUrl": "https://mcp.zovo.one/mcp/catalogue",
+      "headers": {
+        "Authorization": "Bearer ${ZOVO_MCP_TOKEN}"
+      },
+      "description": "One price list and one rate card, kept where the invoice and the quote can both read them."
+    }
+  }
+}
