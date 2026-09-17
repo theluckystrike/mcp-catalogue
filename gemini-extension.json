@@ -1,6 +1,6 @@
 {
   "name": "mcp-catalogue",
-  "version": "0.21.0",
+  "version": "0.22.0",
   "description": "MCP server for a product price list and rate card. One price list and one rate card, kept where the invoice and the quote can both read them.",
   "settings": [
     {
